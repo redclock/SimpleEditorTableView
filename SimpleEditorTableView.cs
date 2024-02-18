@@ -41,8 +41,6 @@ namespace RedGame.Framework.EditorTools
         private readonly Color _darkerColor = Color.white * 0.1f;
 
         private Vector2 _scrollPosition;
-        private float _rowWidth;
-        private float _rowHeight;
         private bool _columnResized;
         private bool _sortingDirty;
         
