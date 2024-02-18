@@ -70,7 +70,7 @@ Call the `SimpleEditorTableView<TData>.AddColumn()` method to define the columns
     - __SetTooltip__: Sets the tooltip for the column.
     - __SetAutoResize__: Sets whether the column should automatically resize.
     - __SetAllowToggleVisibility__: Sets whether the column can be hidden.
-    - __etSorting__: Sets the sorting rule. Pass in a comparator to compare the size of two elements. Only ascending order sorting needs to be implemented; descending order sorting will be handled automatically.
+    - __SetSorting__: Sets the sorting rule. Pass in a comparator to compare the size of two elements. Only ascending order sorting needs to be implemented; descending order sorting will be handled automatically.
 
 ### Step 3: Call Drawing in OnGUI
 Call the `SimpleEditorTableView<TData>.DrawTableGUI()` method in OnGUI to set the data. A TData array needs to be passed in. It can be inserted anywhere in OnGUI.

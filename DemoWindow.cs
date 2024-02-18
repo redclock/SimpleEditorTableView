@@ -167,7 +167,7 @@ namespace RedGame.Framework.EditorTools
 
             _newLightType = (LightType)EditorGUILayout.EnumPopup("Light Type", _newLightType);
             
-            // 刷新按钮
+            // Create new light button
             if (GUILayout.Button("Create New"))
             {
                 _lightItems = _lightItems.Concat(new[]
