@@ -125,7 +125,7 @@ namespace RedGame.Framework.EditorTools
             _columnResized = false;
         }
         
-        public void DrawTableGUI(TData[] data, float rowHeight = -1)
+        public void DrawTableGUI(TData[] data, float maxHeight = float.MaxValue, float rowHeight = -1)
         {
             if (_multiColumnHeader == null || _columnResized)
                 ReBuild();
@@ -142,7 +142,7 @@ namespace RedGame.Framework.EditorTools
 
             UpdateSorting(data);
 
-            Rect scrollViewPos = GUILayoutUtility.GetRect(0, sumWidth, 0, float.MaxValue);
+            Rect scrollViewPos = GUILayoutUtility.GetRect(0, sumWidth, 0, maxHeight);
             Rect viewRect = new Rect(0, 0, sumWidth, sumHeight);
             
             _scrollPosition = GUI.BeginScrollView(
